@@ -1,0 +1,31 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+
+parts:
+  # - caption: Preface
+  #   chapters:
+  #     - file: book/preface/instructor
+  #     - file: book/preface/syllabus
+  #     - file: book/preface/software
+  - caption: Foundation
+    numbered: true
+    maxdepth: 2
+    chapters:
+      - file: docs/foundation/Covariance_and_CovMatrix
+      - file: docs/foundation/MLE
+      - file: docs/foundation/Sample-Size-Determine
+      - file: docs/foundation/SAR-CAR
+  - caption: Statistic Learning (Luc Anselin)
+    numbered: true
+    maxdepth: 2
+    chapters:
+      - file: docs/st_learning_anselin/L1-Spatial-Analysis-Intro
+      - file: docs/st_learning_anselin/L2-Maps
+      - file: docs/st_learning_anselin/L3-Exploratory-Data-Analysis
+  # - caption: Appendix
+  #   chapters:
+  #     - file: book/gee/bibliography
+  #     - file: book/gee/issues
