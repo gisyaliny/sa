@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>11. Exploratory Data Analysis &#8212; Yalin&#39;s Spatial Auto-autocorrelation Handbook</title>
+    <title>12. Spatial Autocorrelation &#8212; Yalin&#39;s Spatial Auto-autocorrelation Handbook</title>
   
   
   
@@ -59,13 +59,12 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/st_learning_anselin/L3-Exploratory-Data-Analysis';</script>
-    <link rel="canonical" href="https://gisyaliny.github.io/sa/docs/st_learning_anselin/L3-Exploratory-Data-Analysis.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/st_learning_anselin/L4-Spatial-Autocorrelation';</script>
+    <link rel="canonical" href="https://gisyaliny.github.io/sa/docs/st_learning_anselin/L4-Spatial-Autocorrelation.html" />
     <link rel="icon" href="../../_static/fav.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="12. Spatial Autocorrelation" href="L4-Spatial-Autocorrelation.html" />
-    <link rel="prev" title="7. Traditional Knowledge Discovery" href="L2-Maps.html" />
+    <link rel="prev" title="11. Exploratory Data Analysis" href="L3-Exploratory-Data-Analysis.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -188,8 +187,8 @@
 
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Exploratory Data Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="L4-Spatial-Autocorrelation.html">12. Spatial Autocorrelation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L3-Exploratory-Data-Analysis.html">11. Exploratory Data Analysis</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">12. Spatial Autocorrelation</a></li>
 </ul>
 
     </div>
@@ -244,7 +243,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/gisyaliny/sa/master?urlpath=tree/docs/st_learning_anselin/L3-Exploratory-Data-Analysis.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/gisyaliny/sa/master?urlpath=tree/docs/st_learning_anselin/L4-Spatial-Autocorrelation.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onBinder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -262,7 +261,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/gisyaliny/sa/blob/master/docs/st_learning_anselin/L3-Exploratory-Data-Analysis.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/gisyaliny/sa/blob/master/docs/st_learning_anselin/L4-Spatial-Autocorrelation.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -310,7 +309,7 @@
       
       
       
-      <li><a href="https://github.com/gisyaliny/sa/edit/main/docs/st_learning_anselin/L3-Exploratory-Data-Analysis.ipynb" target="_blank"
+      <li><a href="https://github.com/gisyaliny/sa/edit/main/docs/st_learning_anselin/L4-Spatial-Autocorrelation.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -327,7 +326,7 @@
       
       
       
-      <li><a href="https://github.com/gisyaliny/sa/issues/new?title=Issue%20on%20page%20%2Fdocs/st_learning_anselin/L3-Exploratory-Data-Analysis.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/gisyaliny/sa/issues/new?title=Issue%20on%20page%20%2Fdocs/st_learning_anselin/L4-Spatial-Autocorrelation.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +356,7 @@
       
       
       
-      <li><a href="../../_sources/docs/st_learning_anselin/L3-Exploratory-Data-Analysis.ipynb" target="_blank"
+      <li><a href="../../_sources/docs/st_learning_anselin/L4-Spatial-Autocorrelation.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -441,7 +440,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Exploratory Data Analysis</h1>
+    <h1>Spatial Autocorrelation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -451,28 +450,28 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-statistical-graphs">11.1. Basic Statistical Graphs</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#univariate-distribution">11.1.1. Univariate Distribution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bivariate-distribution">11.1.2. Bivariate Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-randomness">12.1. Spatial Randomness</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-null-hypothesis">12.1.1. The Null Hypothesis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpreting-spatial-randomness">12.1.2. Interpreting Spatial Randomness</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operationalizing-spatial-randomness">12.1.3. Operationalizing Spatial Randomness</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-heterogeneity">11.2. Spatial Heterogeneity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-spatial-heterogeneity-analysis-bivariate">11.3. Tools for Spatial Heterogeneity Analysis (Bivariate)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#averages-chart">11.3.1. Averages Chart</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brushing-the-scatter-plot">11.3.2. Brushing the Scatter Plot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#positive-and-negative-spatial-autocorrelation">12.2. Positive and Negative spatial autocorrelation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#positive-spatial-autocorrelation">12.2.1. Positive Spatial Autocorrelation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negative-spatial-autocorrelation">12.2.2. Negative Spatial Autocorrelation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multivariate-eda">11.4. Multivariate EDA</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">11.4.1. Objective</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-autocorrelation-statistics">12.3. Spatial Autocorrelation Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-statistics">12.3.1. Test Statistics</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-for-multivariate-eda">11.5. Methods for multivariate EDA</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bubble-chart">11.5.1. Bubble Chart</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-scatter-plot">11.5.2. 3D Scatter Plot</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-coordinate-plot-pcp">11.5.3. Parallel coordinate plot(PCP)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-plots">11.5.4. Conditional Plots</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-autocorrelation-statistic">12.4. Spatial Autocorrelation Statistic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#similarity-measure">12.4.1. Similarity Measure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dissimilarity-measure">12.4.2. Dissimilarity Measure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#locational-similarity">12.4.3. Locational Similarity</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-form-of-spatial-autocorrelation-statistic">12.5. General Form of Spatial Autocorrelation Statistic</a></li>
 </ul>
             </nav>
         </div>
@@ -484,186 +483,116 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="exploratory-data-analysis">
-<h1><span class="section-number">11. </span>Exploratory Data Analysis<a class="headerlink" href="#exploratory-data-analysis" title="Link to this heading">#</a></h1>
-<section id="basic-statistical-graphs">
-<h2><span class="section-number">11.1. </span>Basic Statistical Graphs<a class="headerlink" href="#basic-statistical-graphs" title="Link to this heading">#</a></h2>
-<section id="univariate-distribution">
-<h3><span class="section-number">11.1.1. </span>Univariate Distribution<a class="headerlink" href="#univariate-distribution" title="Link to this heading">#</a></h3>
-<ol class="arabic">
-<li><p>Histogram</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="spatial-autocorrelation">
+<h1><span class="section-number">12. </span>Spatial Autocorrelation<a class="headerlink" href="#spatial-autocorrelation" title="Link to this heading">#</a></h1>
+<section id="spatial-randomness">
+<h2><span class="section-number">12.1. </span>Spatial Randomness<a class="headerlink" href="#spatial-randomness" title="Link to this heading">#</a></h2>
+<section id="the-null-hypothesis">
+<h3><span class="section-number">12.1.1. </span>The Null Hypothesis<a class="headerlink" href="#the-null-hypothesis" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Spatial randomness is absence of any pattern</p></li>
+<li><p>If rejected, then there is evidence of spatial structure</p></li>
+</ol>
+</section>
+<section id="interpreting-spatial-randomness">
+<h3><span class="section-number">12.1.2. </span>Interpreting Spatial Randomness<a class="headerlink" href="#interpreting-spatial-randomness" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>The observed spatial pattern of clues is equally likely as any other spatial pattern</p>
 <ul class="simple">
-<li><p>Bin / bandwidth</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Simultaneous</span></code> view (<code class="docutils literal notranslate"><span class="pre">Pattern</span></code>)</p></li>
 </ul>
-<p><img alt="img" src="https://media.geeksforgeeks.org/wp-content/uploads/20231004173705/Histogram.webp" /></p>
 </li>
-<li><p>Box plot</p>
-<p><img alt="img" src="https://doc.arcgis.com/en/insights/latest/create/GUID-5C7AAF44-C609-472D-9193-0E9B23C6B68F-web.png" /></p>
-</li>
-</ol>
-</section>
-<section id="bivariate-distribution">
-<h3><span class="section-number">11.1.2. </span>Bivariate Distribution<a class="headerlink" href="#bivariate-distribution" title="Link to this heading">#</a></h3>
-<ol class="arabic">
-<li><p>Scatter plot</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Lowess</span> <span class="pre">Smoother</span></code></p>
+<li><p>Value at one location does not depend on values at other (neighboring) locations</p>
 <ul class="simple">
-<li><p><strong>Local Regression</strong></p></li>
-<li><p>Slope based on a subset of observations</p>
-<ol class="arabic simple">
-<li><p>For each <span class="math notranslate nohighlight">\(x_i\)</span>,<span class="math notranslate nohighlight">\(y_i\)</span>, fit based on (x,y) with x in neighborhood of <span class="math notranslate nohighlight">\(x_i\)</span></p></li>
-</ol>
-</li>
-<li><p>Choice of bandwidth</p>
-<ol class="arabic simple">
-<li><p>Short <code class="docutils literal notranslate"><span class="pre">bandwidth</span></code> yields spiky curve</p></li>
-<li><p>Wide <code class="docutils literal notranslate"><span class="pre">bandwidth</span></code> yields smoother curve</p></li>
-</ol>
-</li>
-</ul>
-<p><img alt="img11" src="../../_images/11.png" /></p>
-</li>
-</ol>
-</section>
-</section>
-<section id="spatial-heterogeneity">
-<h2><span class="section-number">11.2. </span>Spatial Heterogeneity<a class="headerlink" href="#spatial-heterogeneity" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Structural</span> <span class="pre">breaks</span></code> in the data with a spatial imprint</p></li>
-<li><p>Different distributions in different subregions
-a. Different <code class="docutils literal notranslate"><span class="pre">mean</span></code>, <code class="docutils literal notranslate"><span class="pre">median</span></code></p></li>
-<li><p>Change in bivariate linear relationship</p>
-<ul class="simple">
-<li><p>Structural beak in slope (<code class="docutils literal notranslate"><span class="pre">Chow</span> <span class="pre">Test</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Conditional</span></code> view</p></li>
 </ul>
 </li>
 </ol>
 </section>
-<section id="tools-for-spatial-heterogeneity-analysis-bivariate">
-<h2><span class="section-number">11.3. </span>Tools for Spatial Heterogeneity Analysis (Bivariate)<a class="headerlink" href="#tools-for-spatial-heterogeneity-analysis-bivariate" title="Link to this heading">#</a></h2>
-<section id="averages-chart">
-<h3><span class="section-number">11.3.1. </span>Averages Chart<a class="headerlink" href="#averages-chart" title="Link to this heading">#</a></h3>
+<section id="operationalizing-spatial-randomness">
+<h3><span class="section-number">12.1.3. </span>Operationalizing Spatial Randomness<a class="headerlink" href="#operationalizing-spatial-randomness" title="Link to this heading">#</a></h3>
+<p>Random permutation or reshuffling of values
+<code class="docutils literal notranslate"><span class="pre">Tobler's</span> <span class="pre">First</span> <span class="pre">Law</span></code> of Geography</p>
 <ol class="arabic">
-<li><p>Test on difference in mean</p></li>
-<li><p>Selected and Unselected</p>
+<li><p>Everything depends on everything else, but closer things more so</p>
+<ol class="arabic">
+<li><p>Structures spatial dependence</p></li>
+<li><p>Importance of <code class="docutils literal notranslate"><span class="pre">distance</span> <span class="pre">decay</span></code></p>
 <ul class="simple">
-<li><p>Spatial selection</p></li>
+<li><p>Observations further apart are less correlate</p></li>
+</ul>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Range</span> <span class="pre">of</span> <span class="pre">interaction</span></code> - no spatial correlation beyond</p></li>
 </ul>
 </li>
-<li><p>Test is <code class="docutils literal notranslate"><span class="pre">F-statistic</span></code> from dummy variable regression</p>
+</ol>
+</li>
+</ol>
+<p><img alt="image.png" src="../../_images/19.png" /></p>
+</section>
+</section>
+<section id="positive-and-negative-spatial-autocorrelation">
+<h2><span class="section-number">12.2. </span>Positive and Negative spatial autocorrelation<a class="headerlink" href="#positive-and-negative-spatial-autocorrelation" title="Link to this heading">#</a></h2>
+<section id="positive-spatial-autocorrelation">
+<h3><span class="section-number">12.2.1. </span>Positive Spatial Autocorrelation<a class="headerlink" href="#positive-spatial-autocorrelation" title="Link to this heading">#</a></h3>
+<p><img alt="image.png" src="docs/st_learning_anselin/attachment:bc111202-59ba-4ce1-b1c3-c6569a8b4d11.png" /></p>
+</section>
+<section id="negative-spatial-autocorrelation">
+<h3><span class="section-number">12.2.2. </span>Negative Spatial Autocorrelation<a class="headerlink" href="#negative-spatial-autocorrelation" title="Link to this heading">#</a></h3>
+<p><img alt="image.png" src="docs/st_learning_anselin/attachment:c43f0104-0485-4919-adc3-665f7f3fcd5a.png" /></p>
+</section>
+</section>
+<section id="spatial-autocorrelation-statistics">
+<h2><span class="section-number">12.3. </span>Spatial Autocorrelation Statistics<a class="headerlink" href="#spatial-autocorrelation-statistics" title="Link to this heading">#</a></h2>
+<section id="test-statistics">
+<h3><span class="section-number">12.3.1. </span>Test Statistics<a class="headerlink" href="#test-statistics" title="Link to this heading">#</a></h3>
+<p><img alt="image.png" src="docs/st_learning_anselin/attachment:c9c6eb40-91be-4e38-be6c-920f775d06d3.png" /></p>
+</section>
+</section>
+<section id="spatial-autocorrelation-statistic">
+<h2><span class="section-number">12.4. </span>Spatial Autocorrelation Statistic<a class="headerlink" href="#spatial-autocorrelation-statistic" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Test the coefficient of dummy variable is significant or not</p></li>
-</ul>
-<p><img alt="image.png" src="../../_images/12.png" /></p>
-</li>
+<li><p>Captures both <code class="docutils literal notranslate"><span class="pre">attribute</span> <span class="pre">similarity</span></code> and <code class="docutils literal notranslate"><span class="pre">locational</span> <span class="pre">similarity</span></code></p></li>
+<li><p>Attribute Similarity</p>
+<ol class="arabic simple">
+<li><p>Summary of similarity of observations for variable at different locations</p></li>
+<li><p>Construct <span class="math notranslate nohighlight">\(f(y_i,y_j)\)</span> at location <span class="math notranslate nohighlight">\(i,j\)</span></p></li>
 </ol>
-</section>
-<section id="brushing-the-scatter-plot">
-<h3><span class="section-number">11.3.2. </span>Brushing the Scatter Plot<a class="headerlink" href="#brushing-the-scatter-plot" title="Link to this heading">#</a></h3>
-<ol class="arabic">
-<li><p>A brush is a selection shape</p></li>
-<li><p>Two slopes: <code class="docutils literal notranslate"><span class="pre">selected</span></code> and <code class="docutils literal notranslate"><span class="pre">unselected</span></code></p></li>
-<li><p>As the brush moves, the slopes are recalculated in a dynamic way = <code class="docutils literal notranslate"><span class="pre">dynamic</span> <span class="pre">brushing</span></code></p></li>
-<li><p>The matching observations in other windows are also selection</p>
+</li>
+</ul>
+<section id="similarity-measure">
+<h3><span class="section-number">12.4.1. </span>Similarity Measure<a class="headerlink" href="#similarity-measure" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Dynamic brushing and linking</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cross</span> <span class="pre">product</span></code>: <span class="math notranslate nohighlight">\(y_i,y_j\)</span></p></li>
+<li><p>Under randomness (<code class="docutils literal notranslate"><span class="pre">null</span> <span class="pre">hypothesis</span></code>), cross product is not systematically large or small, otherwise, suggests spatial patterns</p></li>
 </ul>
-</li>
-<li><p>Chow Test on Homogeneity of slopes</p>
+</section>
+<section id="dissimilarity-measure">
+<h3><span class="section-number">12.4.2. </span>Dissimilarity Measure<a class="headerlink" href="#dissimilarity-measure" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Hypothesis test on equality of slopes</p>
-<ol class="arabic simple">
-<li><p>Overall regression slope</p></li>
-<li><p>Slope for selected</p></li>
-<li><p>Slope for unselected</p></li>
-</ol>
-</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Squared</span> <span class="pre">difference</span></code> : <span class="math notranslate nohighlight">\((y_i−y_j )^2\)</span></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Absolute</span> <span class="pre">difference</span></code> : <span class="math notranslate nohighlight">\(|y_i−y_j |\)</span></p></li>
 </ul>
-</li>
-<li><p>Link map brushing with Chow Test</p>
+</section>
+<section id="locational-similarity">
+<h3><span class="section-number">12.4.3. </span>Locational Similarity<a class="headerlink" href="#locational-similarity" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Insight into spatial heterogeneity</p></li>
+<li><p>Formalizing the notion of neighbors <span class="math notranslate nohighlight">\(=(W_ij)\)</span>, <code class="docutils literal notranslate"><span class="pre">spatial</span> <span class="pre">weights</span></code></p></li>
+<li><p>When are two Spatial units <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(j\)</span> a priori likely to interact</p></li>
+<li><p>Not necessarily a geographical notion, can be based on <code class="docutils literal notranslate"><span class="pre">social</span> <span class="pre">network</span></code> or <code class="docutils literal notranslate"><span class="pre">general</span> <span class="pre">distance</span></code> concepts</p></li>
 </ul>
-<p><img alt="img14" src="../../_images/14.png" /></p>
-</li>
-</ol>
 </section>
 </section>
-<section id="multivariate-eda">
-<h2><span class="section-number">11.4. </span>Multivariate EDA<a class="headerlink" href="#multivariate-eda" title="Link to this heading">#</a></h2>
-<section id="objective">
-<h3><span class="section-number">11.4.1. </span>Objective<a class="headerlink" href="#objective" title="Link to this heading">#</a></h3>
+<section id="general-form-of-spatial-autocorrelation-statistic">
+<h2><span class="section-number">12.5. </span>General Form of Spatial Autocorrelation Statistic<a class="headerlink" href="#general-form-of-spatial-autocorrelation-statistic" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Represent multi-dimensional data in two dimensions
-i. Dimension reduction
-ii. Projection</p></li>
-<li><p>Discover Structure, interaction, patterns</p></li>
-<li><p><strong>Exploratory methods do not explain, it suggest <code class="docutils literal notranslate"><span class="pre">hypotheses</span></code></strong></p></li>
-</ol>
-</section>
-</section>
-<section id="methods-for-multivariate-eda">
-<h2><span class="section-number">11.5. </span>Methods for multivariate EDA<a class="headerlink" href="#methods-for-multivariate-eda" title="Link to this heading">#</a></h2>
-<section id="bubble-chart">
-<h3><span class="section-number">11.5.1. </span>Bubble Chart<a class="headerlink" href="#bubble-chart" title="Link to this heading">#</a></h3>
-<ol class="arabic">
-<li><p>e.g. kids in family vs public assistants number vs high rent (sd)</p></li>
-<li><p>Enhanced Scatter Plot</p>
-<ol class="arabic simple">
-<li><p>Size of bubble : third variable</p></li>
-<li><p>Color of bubble: Fourth variable</p></li>
-<li><p>Explore interaction among variables</p></li>
-<li><p>Explore structural breaks</p></li>
-</ol>
-<p><img alt="image.png" src="../../_images/15.png" /></p>
+<li><p>Sum over all pairs of observations of the product of attribute similarity measure with a neighbor indicator (spatial weight)</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sum_{ij}f(x_i,x_j)W_{ij}\)</span></p></li>
+<li><p>where <span class="math notranslate nohighlight">\(f(x_i,x_j)\)</span> is <code class="docutils literal notranslate"><span class="pre">attribute</span> <span class="pre">similarity</span></code>, <span class="math notranslate nohighlight">\(W_ij\)</span> is a <code class="docutils literal notranslate"><span class="pre">spatial</span> <span class="pre">weight</span></code></p></li>
+</ul>
 </li>
 </ol>
-</section>
-<section id="d-scatter-plot">
-<h3><span class="section-number">11.5.2. </span>3D Scatter Plot<a class="headerlink" href="#d-scatter-plot" title="Link to this heading">#</a></h3>
-<ol class="arabic">
-<li><p>Points in a 3D data cube</p></li>
-<li><p>Two-Dimensional analysis on side panels</p></li>
-<li><p>Issues of perspective</p>
-<ol class="arabic simple">
-<li><p>Zooming, Rotating</p></li>
-</ol>
-</li>
-<li><p>Brushing the 3D data Cube</p>
-<p><img alt="image.png" src="../../_images/16.png" /></p>
-</li>
-</ol>
-</section>
-<section id="parallel-coordinate-plot-pcp">
-<h3><span class="section-number">11.5.3. </span>Parallel coordinate plot(PCP)<a class="headerlink" href="#parallel-coordinate-plot-pcp" title="Link to this heading">#</a></h3>
-<ol class="arabic">
-<li><p>Variables</p>
-<ol class="arabic simple">
-<li><p>One parallel line for each variable</p></li>
-<li><p>Outliers are far from the main pack</p></li>
-</ol>
-</li>
-<li><p>Observations</p>
-<ol class="arabic simple">
-<li><p>A line connecting points on parallels</p></li>
-<li><p>The line is the counterpart of a point in the multidimensional data cube</p></li>
-</ol>
-<p><img alt="img" src="../../_images/17.png" /></p>
-</li>
-</ol>
-</section>
-<section id="conditional-plots">
-<h3><span class="section-number">11.5.4. </span>Conditional Plots<a class="headerlink" href="#conditional-plots" title="Link to this heading">#</a></h3>
-<ol class="arabic">
-<li><p>Interpretation of Conditional Plots</p>
-<ol class="arabic simple">
-<li><p>Micro plots are similar, no effect of conditioning variables</p></li>
-<li><p>Micro plots are different, effect of conditioning variables</p></li>
-</ol>
-<p><img alt="image.png" src="../../_images/18.png" /></p>
-</li>
-</ol>
-</section>
 </section>
 </section>
 
@@ -698,22 +627,13 @@ ii. Projection</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="L2-Maps.html"
+       href="L3-Exploratory-Data-Analysis.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Traditional Knowledge Discovery</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>Exploratory Data Analysis</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="L4-Spatial-Autocorrelation.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">12. </span>Spatial Autocorrelation</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -731,28 +651,28 @@ ii. Projection</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-statistical-graphs">11.1. Basic Statistical Graphs</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#univariate-distribution">11.1.1. Univariate Distribution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bivariate-distribution">11.1.2. Bivariate Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-randomness">12.1. Spatial Randomness</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-null-hypothesis">12.1.1. The Null Hypothesis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpreting-spatial-randomness">12.1.2. Interpreting Spatial Randomness</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operationalizing-spatial-randomness">12.1.3. Operationalizing Spatial Randomness</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-heterogeneity">11.2. Spatial Heterogeneity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-spatial-heterogeneity-analysis-bivariate">11.3. Tools for Spatial Heterogeneity Analysis (Bivariate)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#averages-chart">11.3.1. Averages Chart</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brushing-the-scatter-plot">11.3.2. Brushing the Scatter Plot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#positive-and-negative-spatial-autocorrelation">12.2. Positive and Negative spatial autocorrelation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#positive-spatial-autocorrelation">12.2.1. Positive Spatial Autocorrelation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negative-spatial-autocorrelation">12.2.2. Negative Spatial Autocorrelation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multivariate-eda">11.4. Multivariate EDA</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">11.4.1. Objective</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-autocorrelation-statistics">12.3. Spatial Autocorrelation Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-statistics">12.3.1. Test Statistics</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-for-multivariate-eda">11.5. Methods for multivariate EDA</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bubble-chart">11.5.1. Bubble Chart</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-scatter-plot">11.5.2. 3D Scatter Plot</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-coordinate-plot-pcp">11.5.3. Parallel coordinate plot(PCP)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-plots">11.5.4. Conditional Plots</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-autocorrelation-statistic">12.4. Spatial Autocorrelation Statistic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#similarity-measure">12.4.1. Similarity Measure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dissimilarity-measure">12.4.2. Dissimilarity Measure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#locational-similarity">12.4.3. Locational Similarity</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-form-of-spatial-autocorrelation-statistic">12.5. General Form of Spatial Autocorrelation Statistic</a></li>
 </ul>
   </nav></div>
 
