@@ -25,6 +25,7 @@ parts:
       - file: docs/st_learning_anselin/L1-Spatial-Analysis-Intro
       - file: docs/st_learning_anselin/L2-Maps
       - file: docs/st_learning_anselin/L3-Exploratory-Data-Analysis
+      - file: docs/st_learning_anselin/L4-Spatial-Autocorrelation
   # - caption: Appendix
   #   chapters:
   #     - file: book/gee/bibliography
