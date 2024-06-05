@@ -8,25 +8,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>8. Exploratory Data Analysis &#8212; Yalin&#39;s Spatial Auto-autocorrelation Handbook</title>
+    <title>9. Exploratory Data Analysis &#8212; Yalin&#39;s Spatial Auto-autocorrelation Handbook</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
@@ -34,15 +34,15 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -64,8 +64,8 @@
     <link rel="icon" href="../../_static/fav.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="9. Spatial Autocorrelation" href="L4-Spatial-Autocorrelation.html" />
-    <link rel="prev" title="7. Maps" href="L2-Maps.html" />
+    <link rel="next" title="10. Spatial Autocorrelation" href="L4-Spatial-Autocorrelation.html" />
+    <link rel="prev" title="8. Maps" href="L2-Maps.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -75,23 +75,27 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -113,13 +117,8 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
     </header>
   
 
@@ -178,15 +177,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../foundation/Covariance_and_CovMatrix.html">1. Covariance and Covariance Matrix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../foundation/MLE.html">2. Maximum likelihood estimation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../foundation/Sample-Size-Determine.html">3. Sample Size</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../foundation/SAR-CAR.html">4. SAR and CAR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foundation/Kriging.html">4. The Kriging Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foundation/SAR-CAR.html">5. SAR and CAR</a></li>
 
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistic Learning (Luc Anselin)</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="L1-Spatial-Analysis-Intro.html">6. Introduction of Spatial Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="L2-Maps.html">7. Maps</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Exploratory Data Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="L4-Spatial-Autocorrelation.html">9. Spatial Autocorrelation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L1-Spatial-Analysis-Intro.html">7. Introduction of Spatial Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L2-Maps.html">8. Maps</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">9. Exploratory Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L4-Spatial-Autocorrelation.html">10. Spatial Autocorrelation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L5-Global-Spatial-Autocorrelation.html">11. Moran’s I and Geary’s C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L6-Visualizing-Spatial-Autocorrelation.html">12. Visualizing Spatial Autocorrelation</a></li>
 </ul>
 
     </div>
@@ -202,7 +204,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -211,7 +213,7 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -448,26 +450,26 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-statistical-graphs">8.1. Basic Statistical Graphs</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#univariate-distribution">8.1.1. Univariate Distribution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bivariate-distribution">8.1.2. Bivariate Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-statistical-graphs">9.1. Basic Statistical Graphs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#univariate-distribution">9.1.1. Univariate Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bivariate-distribution">9.1.2. Bivariate Distribution</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-heterogeneity">8.2. Spatial Heterogeneity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-spatial-heterogeneity-analysis-bivariate">8.3. Tools for Spatial Heterogeneity Analysis (Bivariate)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#averages-chart">8.3.1. Averages Chart</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brushing-the-scatter-plot">8.3.2. Brushing the Scatter Plot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-heterogeneity">9.2. Spatial Heterogeneity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-spatial-heterogeneity-analysis-bivariate">9.3. Tools for Spatial Heterogeneity Analysis (Bivariate)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#averages-chart">9.3.1. Averages Chart</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brushing-the-scatter-plot">9.3.2. Brushing the Scatter Plot</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multivariate-eda">8.4. Multivariate EDA</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">8.4.1. Objective</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multivariate-eda">9.4. Multivariate EDA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">9.4.1. Objective</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-for-multivariate-eda">8.5. Methods for multivariate EDA</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bubble-chart">8.5.1. Bubble Chart</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-scatter-plot">8.5.2. 3D Scatter Plot</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-coordinate-plot-pcp">8.5.3. Parallel coordinate plot(PCP)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-plots">8.5.4. Conditional Plots</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-for-multivariate-eda">9.5. Methods for multivariate EDA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bubble-chart">9.5.1. Bubble Chart</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-scatter-plot">9.5.2. 3D Scatter Plot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-coordinate-plot-pcp">9.5.3. Parallel coordinate plot(PCP)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-plots">9.5.4. Conditional Plots</a></li>
 </ul>
 </li>
 </ul>
@@ -482,11 +484,11 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="exploratory-data-analysis">
-<h1><span class="section-number">8. </span>Exploratory Data Analysis<a class="headerlink" href="#exploratory-data-analysis" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">9. </span>Exploratory Data Analysis<a class="headerlink" href="#exploratory-data-analysis" title="Link to this heading">#</a></h1>
 <section id="basic-statistical-graphs">
-<h2><span class="section-number">8.1. </span>Basic Statistical Graphs<a class="headerlink" href="#basic-statistical-graphs" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">9.1. </span>Basic Statistical Graphs<a class="headerlink" href="#basic-statistical-graphs" title="Link to this heading">#</a></h2>
 <section id="univariate-distribution">
-<h3><span class="section-number">8.1.1. </span>Univariate Distribution<a class="headerlink" href="#univariate-distribution" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">9.1.1. </span>Univariate Distribution<a class="headerlink" href="#univariate-distribution" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Histogram</p>
 <ul class="simple">
@@ -500,7 +502,7 @@ document.write(`
 </ol>
 </section>
 <section id="bivariate-distribution">
-<h3><span class="section-number">8.1.2. </span>Bivariate Distribution<a class="headerlink" href="#bivariate-distribution" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">9.1.2. </span>Bivariate Distribution<a class="headerlink" href="#bivariate-distribution" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Scatter plot</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Lowess</span> <span class="pre">Smoother</span></code></p>
@@ -524,7 +526,7 @@ document.write(`
 </section>
 </section>
 <section id="spatial-heterogeneity">
-<h2><span class="section-number">8.2. </span>Spatial Heterogeneity<a class="headerlink" href="#spatial-heterogeneity" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">9.2. </span>Spatial Heterogeneity<a class="headerlink" href="#spatial-heterogeneity" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Structural</span> <span class="pre">breaks</span></code> in the data with a spatial imprint</p></li>
 <li><p>Different distributions in different subregions
@@ -537,9 +539,9 @@ a. Different <code class="docutils literal notranslate"><span class="pre">mean</
 </ol>
 </section>
 <section id="tools-for-spatial-heterogeneity-analysis-bivariate">
-<h2><span class="section-number">8.3. </span>Tools for Spatial Heterogeneity Analysis (Bivariate)<a class="headerlink" href="#tools-for-spatial-heterogeneity-analysis-bivariate" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">9.3. </span>Tools for Spatial Heterogeneity Analysis (Bivariate)<a class="headerlink" href="#tools-for-spatial-heterogeneity-analysis-bivariate" title="Link to this heading">#</a></h2>
 <section id="averages-chart">
-<h3><span class="section-number">8.3.1. </span>Averages Chart<a class="headerlink" href="#averages-chart" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">9.3.1. </span>Averages Chart<a class="headerlink" href="#averages-chart" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Test on difference in mean</p></li>
 <li><p>Selected and Unselected</p>
@@ -556,7 +558,7 @@ a. Different <code class="docutils literal notranslate"><span class="pre">mean</
 </ol>
 </section>
 <section id="brushing-the-scatter-plot">
-<h3><span class="section-number">8.3.2. </span>Brushing the Scatter Plot<a class="headerlink" href="#brushing-the-scatter-plot" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">9.3.2. </span>Brushing the Scatter Plot<a class="headerlink" href="#brushing-the-scatter-plot" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>A brush is a selection shape</p></li>
 <li><p>Two slopes: <code class="docutils literal notranslate"><span class="pre">selected</span></code> and <code class="docutils literal notranslate"><span class="pre">unselected</span></code></p></li>
@@ -587,9 +589,9 @@ a. Different <code class="docutils literal notranslate"><span class="pre">mean</
 </section>
 </section>
 <section id="multivariate-eda">
-<h2><span class="section-number">8.4. </span>Multivariate EDA<a class="headerlink" href="#multivariate-eda" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">9.4. </span>Multivariate EDA<a class="headerlink" href="#multivariate-eda" title="Link to this heading">#</a></h2>
 <section id="objective">
-<h3><span class="section-number">8.4.1. </span>Objective<a class="headerlink" href="#objective" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">9.4.1. </span>Objective<a class="headerlink" href="#objective" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Represent multi-dimensional data in two dimensions
 i. Dimension reduction
@@ -600,9 +602,9 @@ ii. Projection</p></li>
 </section>
 </section>
 <section id="methods-for-multivariate-eda">
-<h2><span class="section-number">8.5. </span>Methods for multivariate EDA<a class="headerlink" href="#methods-for-multivariate-eda" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">9.5. </span>Methods for multivariate EDA<a class="headerlink" href="#methods-for-multivariate-eda" title="Link to this heading">#</a></h2>
 <section id="bubble-chart">
-<h3><span class="section-number">8.5.1. </span>Bubble Chart<a class="headerlink" href="#bubble-chart" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">9.5.1. </span>Bubble Chart<a class="headerlink" href="#bubble-chart" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>e.g. kids in family vs public assistants number vs high rent (sd)</p></li>
 <li><p>Enhanced Scatter Plot</p>
@@ -617,7 +619,7 @@ ii. Projection</p></li>
 </ol>
 </section>
 <section id="d-scatter-plot">
-<h3><span class="section-number">8.5.2. </span>3D Scatter Plot<a class="headerlink" href="#d-scatter-plot" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">9.5.2. </span>3D Scatter Plot<a class="headerlink" href="#d-scatter-plot" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Points in a 3D data cube</p></li>
 <li><p>Two-Dimensional analysis on side panels</p></li>
@@ -632,7 +634,7 @@ ii. Projection</p></li>
 </ol>
 </section>
 <section id="parallel-coordinate-plot-pcp">
-<h3><span class="section-number">8.5.3. </span>Parallel coordinate plot(PCP)<a class="headerlink" href="#parallel-coordinate-plot-pcp" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">9.5.3. </span>Parallel coordinate plot(PCP)<a class="headerlink" href="#parallel-coordinate-plot-pcp" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Variables</p>
 <ol class="arabic simple">
@@ -650,7 +652,7 @@ ii. Projection</p></li>
 </ol>
 </section>
 <section id="conditional-plots">
-<h3><span class="section-number">8.5.4. </span>Conditional Plots<a class="headerlink" href="#conditional-plots" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">9.5.4. </span>Conditional Plots<a class="headerlink" href="#conditional-plots" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Interpretation of Conditional Plots</p>
 <ol class="arabic simple">
@@ -691,7 +693,7 @@ ii. Projection</p></li>
               
               
               
-                <footer class="prev-next-footer d-print-none">
+                <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -700,7 +702,7 @@ ii. Projection</p></li>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Maps</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Maps</p>
       </div>
     </a>
     <a class="right-next"
@@ -708,7 +710,7 @@ ii. Projection</p></li>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">9. </span>Spatial Autocorrelation</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Spatial Autocorrelation</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -728,26 +730,26 @@ ii. Projection</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-statistical-graphs">8.1. Basic Statistical Graphs</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#univariate-distribution">8.1.1. Univariate Distribution</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bivariate-distribution">8.1.2. Bivariate Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-statistical-graphs">9.1. Basic Statistical Graphs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#univariate-distribution">9.1.1. Univariate Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bivariate-distribution">9.1.2. Bivariate Distribution</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-heterogeneity">8.2. Spatial Heterogeneity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-spatial-heterogeneity-analysis-bivariate">8.3. Tools for Spatial Heterogeneity Analysis (Bivariate)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#averages-chart">8.3.1. Averages Chart</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brushing-the-scatter-plot">8.3.2. Brushing the Scatter Plot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-heterogeneity">9.2. Spatial Heterogeneity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-spatial-heterogeneity-analysis-bivariate">9.3. Tools for Spatial Heterogeneity Analysis (Bivariate)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#averages-chart">9.3.1. Averages Chart</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brushing-the-scatter-plot">9.3.2. Brushing the Scatter Plot</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multivariate-eda">8.4. Multivariate EDA</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">8.4.1. Objective</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multivariate-eda">9.4. Multivariate EDA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">9.4.1. Objective</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-for-multivariate-eda">8.5. Methods for multivariate EDA</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bubble-chart">8.5.1. Bubble Chart</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-scatter-plot">8.5.2. 3D Scatter Plot</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-coordinate-plot-pcp">8.5.3. Parallel coordinate plot(PCP)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-plots">8.5.4. Conditional Plots</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-for-multivariate-eda">9.5. Methods for multivariate EDA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bubble-chart">9.5.1. Bubble Chart</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-scatter-plot">9.5.2. 3D Scatter Plot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parallel-coordinate-plot-pcp">9.5.3. Parallel coordinate plot(PCP)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-plots">9.5.4. Conditional Plots</a></li>
 </ul>
 </li>
 </ul>
@@ -798,8 +800,8 @@ By Yalin Yang
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

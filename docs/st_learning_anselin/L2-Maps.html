@@ -8,25 +8,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>7. Maps &#8212; Yalin&#39;s Spatial Auto-autocorrelation Handbook</title>
+    <title>8. Maps &#8212; Yalin&#39;s Spatial Auto-autocorrelation Handbook</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
@@ -34,15 +34,15 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -64,8 +64,8 @@
     <link rel="icon" href="../../_static/fav.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="8. Exploratory Data Analysis" href="L3-Exploratory-Data-Analysis.html" />
-    <link rel="prev" title="6. Introduction of Spatial Analysis" href="L1-Spatial-Analysis-Intro.html" />
+    <link rel="next" title="9. Exploratory Data Analysis" href="L3-Exploratory-Data-Analysis.html" />
+    <link rel="prev" title="7. Introduction of Spatial Analysis" href="L1-Spatial-Analysis-Intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -75,23 +75,27 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -113,13 +117,8 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
     </header>
   
 
@@ -178,15 +177,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../foundation/Covariance_and_CovMatrix.html">1. Covariance and Covariance Matrix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../foundation/MLE.html">2. Maximum likelihood estimation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../foundation/Sample-Size-Determine.html">3. Sample Size</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../foundation/SAR-CAR.html">4. SAR and CAR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foundation/Kriging.html">4. The Kriging Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foundation/SAR-CAR.html">5. SAR and CAR</a></li>
 
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistic Learning (Luc Anselin)</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="L1-Spatial-Analysis-Intro.html">6. Introduction of Spatial Analysis</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Maps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="L3-Exploratory-Data-Analysis.html">8. Exploratory Data Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="L4-Spatial-Autocorrelation.html">9. Spatial Autocorrelation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L1-Spatial-Analysis-Intro.html">7. Introduction of Spatial Analysis</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L3-Exploratory-Data-Analysis.html">9. Exploratory Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L4-Spatial-Autocorrelation.html">10. Spatial Autocorrelation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L5-Global-Spatial-Autocorrelation.html">11. Moran’s I and Geary’s C</a></li>
+<li class="toctree-l1"><a class="reference internal" href="L6-Visualizing-Spatial-Autocorrelation.html">12. Visualizing Spatial Autocorrelation</a></li>
 </ul>
 
     </div>
@@ -202,7 +204,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -211,7 +213,7 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -448,25 +450,25 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map">7.1. Map</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traditional-knowledge-discovery">7.1.1. Traditional Knowledge Discovery</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map">8.1. Map</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traditional-knowledge-discovery">8.1.1. Traditional Knowledge Discovery</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-design-primer">7.2. Map Design Primer</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-lie-with-maps">7.2.1. How to Lie with Maps</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-map">7.2.2. Choropleth Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-design-primer">8.2. Map Design Primer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-lie-with-maps">8.2.1. How to Lie with Maps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-map">8.2.2. Choropleth Map</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-statistical-maps">7.3. Continuous Statistical Maps</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#percentile-map">7.3.1. Percentile Map</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#box-map-plot-luc-anselin">7.3.2. Box map plot (Luc Anselin)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation-map">7.3.3. Standard Deviation Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-statistical-maps">8.3. Continuous Statistical Maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#percentile-map">8.3.1. Percentile Map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#box-map-plot-luc-anselin">8.3.2. Box map plot (Luc Anselin)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation-map">8.3.3. Standard Deviation Map</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorial-statistical-maps">7.4. Categorial Statistical Maps</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#co-location-map">7.4.1. Co-Location Map</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cartogram">7.4.2. Cartogram</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-map">7.4.3. Conditional Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorial-statistical-maps">8.4. Categorial Statistical Maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#co-location-map">8.4.1. Co-Location Map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cartogram">8.4.2. Cartogram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-map">8.4.3. Conditional Map</a></li>
 </ul>
 </li>
 </ul>
@@ -481,9 +483,9 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="maps">
-<h1><span class="section-number">7. </span>Maps<a class="headerlink" href="#maps" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">8. </span>Maps<a class="headerlink" href="#maps" title="Link to this heading">#</a></h1>
 <section id="map">
-<h2><span class="section-number">7.1. </span>Map<a class="headerlink" href="#map" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.1. </span>Map<a class="headerlink" href="#map" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Definition: a map is <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">collection</span> <span class="pre">of</span> <span class="pre">spatially</span> <span class="pre">defined</span> <span class="pre">objects</span></code> (Mark Monmonier)</p></li>
 <li><p>Beyond mapping</p>
@@ -504,7 +506,7 @@ document.write(`
 </li>
 </ol>
 <section id="traditional-knowledge-discovery">
-<h3><span class="section-number">7.1.1. </span>Traditional Knowledge Discovery<a class="headerlink" href="#traditional-knowledge-discovery" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.1.1. </span>Traditional Knowledge Discovery<a class="headerlink" href="#traditional-knowledge-discovery" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Deductive</span></code> approach</p>
 <ul class="simple">
@@ -526,9 +528,9 @@ document.write(`
 </section>
 </section>
 <section id="map-design-primer">
-<h2><span class="section-number">7.2. </span>Map Design Primer<a class="headerlink" href="#map-design-primer" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.2. </span>Map Design Primer<a class="headerlink" href="#map-design-primer" title="Link to this heading">#</a></h2>
 <section id="how-to-lie-with-maps">
-<h3><span class="section-number">7.2.1. </span>How to Lie with Maps<a class="headerlink" href="#how-to-lie-with-maps" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.2.1. </span>How to Lie with Maps<a class="headerlink" href="#how-to-lie-with-maps" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Manipulate map design parameters</p>
 <ul class="simple">
@@ -548,7 +550,7 @@ document.write(`
 </ol>
 </section>
 <section id="choropleth-map">
-<h3><span class="section-number">7.2.2. </span>Choropleth Map<a class="headerlink" href="#choropleth-map" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.2.2. </span>Choropleth Map<a class="headerlink" href="#choropleth-map" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Visualizing a spatial distribution</p>
 <ul class="simple">
@@ -561,9 +563,9 @@ document.write(`
 </section>
 </section>
 <section id="continuous-statistical-maps">
-<h2><span class="section-number">7.3. </span>Continuous Statistical Maps<a class="headerlink" href="#continuous-statistical-maps" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.3. </span>Continuous Statistical Maps<a class="headerlink" href="#continuous-statistical-maps" title="Link to this heading">#</a></h2>
 <section id="percentile-map">
-<h3><span class="section-number">7.3.1. </span>Percentile Map<a class="headerlink" href="#percentile-map" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.3.1. </span>Percentile Map<a class="headerlink" href="#percentile-map" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Special form of <code class="docutils literal notranslate"><span class="pre">Quantile</span> <span class="pre">Map</span></code> - <code class="docutils literal notranslate"><span class="pre">Percentiles</span></code></p></li>
 <li><p>6 categories instead of 100 categories</p>
@@ -578,7 +580,7 @@ document.write(`
 </ol>
 </section>
 <section id="box-map-plot-luc-anselin">
-<h3><span class="section-number">7.3.2. </span>Box map plot (Luc Anselin)<a class="headerlink" href="#box-map-plot-luc-anselin" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.3.2. </span>Box map plot (Luc Anselin)<a class="headerlink" href="#box-map-plot-luc-anselin" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Box and whiskers plot</p>
 <ul class="simple">
@@ -600,7 +602,7 @@ document.write(`
 </ol>
 </section>
 <section id="standard-deviation-map">
-<h3><span class="section-number">7.3.3. </span>Standard Deviation Map<a class="headerlink" href="#standard-deviation-map" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.3.3. </span>Standard Deviation Map<a class="headerlink" href="#standard-deviation-map" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p><strong>Based on standardized data value</strong></p>
 <ul class="simple">
@@ -615,9 +617,9 @@ document.write(`
 </section>
 </section>
 <section id="categorial-statistical-maps">
-<h2><span class="section-number">7.4. </span>Categorial Statistical Maps<a class="headerlink" href="#categorial-statistical-maps" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.4. </span>Categorial Statistical Maps<a class="headerlink" href="#categorial-statistical-maps" title="Link to this heading">#</a></h2>
 <section id="co-location-map">
-<h3><span class="section-number">7.4.1. </span>Co-Location Map<a class="headerlink" href="#co-location-map" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.4.1. </span>Co-Location Map<a class="headerlink" href="#co-location-map" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Unique value map or <code class="docutils literal notranslate"><span class="pre">Categorical</span> <span class="pre">map</span></code></p>
 <ul class="simple">
@@ -641,7 +643,7 @@ document.write(`
 </ol>
 </section>
 <section id="cartogram">
-<h3><span class="section-number">7.4.2. </span>Cartogram<a class="headerlink" href="#cartogram" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.4.2. </span>Cartogram<a class="headerlink" href="#cartogram" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Areal unit proportional to variable of interest</p></li>
 <li><p>Avoid misleading effect of area</p>
@@ -656,7 +658,7 @@ document.write(`
 </ol>
 </section>
 <section id="conditional-map">
-<h3><span class="section-number">7.4.3. </span>Conditional Map<a class="headerlink" href="#conditional-map" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.4.3. </span>Conditional Map<a class="headerlink" href="#conditional-map" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Special case of <code class="docutils literal notranslate"><span class="pre">trellis/facet/conditional</span> <span class="pre">graphs</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Micro-map</span> <span class="pre">matrix</span></code></p>
@@ -698,7 +700,7 @@ document.write(`
               
               
               
-                <footer class="prev-next-footer d-print-none">
+                <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -707,7 +709,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>Introduction of Spatial Analysis</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Introduction of Spatial Analysis</p>
       </div>
     </a>
     <a class="right-next"
@@ -715,7 +717,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">8. </span>Exploratory Data Analysis</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Exploratory Data Analysis</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -735,25 +737,25 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map">7.1. Map</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traditional-knowledge-discovery">7.1.1. Traditional Knowledge Discovery</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map">8.1. Map</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traditional-knowledge-discovery">8.1.1. Traditional Knowledge Discovery</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-design-primer">7.2. Map Design Primer</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-lie-with-maps">7.2.1. How to Lie with Maps</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-map">7.2.2. Choropleth Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-design-primer">8.2. Map Design Primer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-lie-with-maps">8.2.1. How to Lie with Maps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-map">8.2.2. Choropleth Map</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-statistical-maps">7.3. Continuous Statistical Maps</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#percentile-map">7.3.1. Percentile Map</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#box-map-plot-luc-anselin">7.3.2. Box map plot (Luc Anselin)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation-map">7.3.3. Standard Deviation Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-statistical-maps">8.3. Continuous Statistical Maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#percentile-map">8.3.1. Percentile Map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#box-map-plot-luc-anselin">8.3.2. Box map plot (Luc Anselin)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation-map">8.3.3. Standard Deviation Map</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorial-statistical-maps">7.4. Categorial Statistical Maps</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#co-location-map">7.4.1. Co-Location Map</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cartogram">7.4.2. Cartogram</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-map">7.4.3. Conditional Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#categorial-statistical-maps">8.4. Categorial Statistical Maps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#co-location-map">8.4.1. Co-Location Map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cartogram">8.4.2. Cartogram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-map">8.4.3. Conditional Map</a></li>
 </ul>
 </li>
 </ul>
@@ -804,8 +806,8 @@ By Yalin Yang
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
